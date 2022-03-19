@@ -1,9 +1,10 @@
-package com.example.data.mapper
+package com.example.domain.mapper
 
 import com.example.data.dto.EpisodeDto
 import com.example.domain.model.Episode
+import javax.inject.Inject
 
-class EpisodeMapper {
+class EpisodeMapper @Inject constructor() {
 
     fun map(episodeDto: EpisodeDto): Episode {
         return Episode(

@@ -13,4 +13,6 @@ data class Character(
     val episode: ArrayList<String> = arrayListOf(),
     val url: String,
     val created: String,
+    val locationName: String,
+    val originName: String,
 )

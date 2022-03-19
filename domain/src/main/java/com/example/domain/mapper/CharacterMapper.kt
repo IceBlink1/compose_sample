@@ -1,4 +1,4 @@
-package com.example.data.mapper
+package com.example.domain.mapper
 
 import com.example.data.dto.CharacterDto
 import com.example.domain.model.Character
@@ -14,12 +14,14 @@ class CharacterMapper @Inject constructor() {
             species = characterDto.species!!,
             type = characterDto.type!!,
             gender = characterDto.gender!!,
-            originId = characterDto.originDto?.url!![characterDto.originDto?.url?.length!! - 1].digitToInt(),
-            locationId = characterDto.locationDto?.url!![characterDto.originDto?.url?.length!! - 1].digitToInt(),
+            originId = 0, //characterDto.originDto?.url!![characterDto.originDto?.url?.length!! - 1].digitToInt(),
+            locationId = 0, //characterDto.locationDto?.url!![characterDto.originDto?.url?.length!! - 1].digitToInt(),
             image = characterDto.image,
             episode = characterDto.episode,
             url = characterDto.url!!,
             created = characterDto.created!!,
+            locationName = characterDto.locationDto?.name!!,
+            originName = characterDto.originDto?.name!!,
         )
     }
 
