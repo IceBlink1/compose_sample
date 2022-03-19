@@ -1,7 +1,5 @@
 package com.example.composeexample.ui.episode
 
-import androidx.compose.material.ScaffoldState
-import androidx.compose.material.rememberScaffoldState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -16,8 +14,7 @@ fun EpisodeRoute() {
 
 @Composable
 fun EpisodeRoute(
-    uiState: EpisodeUiState,
-    scaffoldState: ScaffoldState = rememberScaffoldState()
+    uiState: EpisodeUiState
 ) {
     when (uiState) {
         is EpisodeUiState.Content -> EpisodeScreen(uiState = uiState)

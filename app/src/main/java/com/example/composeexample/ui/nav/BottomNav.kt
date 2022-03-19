@@ -19,6 +19,7 @@ fun BottomNav(navController: NavController) {
     val items = listOf(
         BottomNavItem.EpisodeList,
         BottomNavItem.CharacterList,
+        BottomNavItem.LocationList,
     )
     BottomNavigation(
         backgroundColor = colorResource(id = R.color.teal_200),

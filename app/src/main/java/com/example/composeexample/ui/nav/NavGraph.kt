@@ -9,6 +9,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.composeexample.ui.character.CharacterRoute
 import com.example.composeexample.ui.episode.EpisodeRoute
+import com.example.composeexample.ui.location.LocationRoute
 
 @Composable
 fun NavGraph(
@@ -20,11 +21,14 @@ fun NavGraph(
         startDestination = "characters",
         modifier = modifier
     ) {
-        composable("characters") {
+        composable(BottomNavItem.CharacterList.screenRoute) {
             CharacterRoute()
         }
-        composable("episodes") {
+        composable(BottomNavItem.EpisodeList.screenRoute) {
             EpisodeRoute()
+        }
+        composable(BottomNavItem.LocationList.screenRoute) {
+            LocationRoute()
         }
     }
 }

@@ -2,8 +2,9 @@ package com.example.domain.mapper
 
 import com.example.data.dto.LocationDto
 import com.example.domain.model.Location
+import javax.inject.Inject
 
-class LocationMapper {
+class LocationMapper @Inject constructor() {
 
     fun map(locationDto: LocationDto): Location {
         return Location(

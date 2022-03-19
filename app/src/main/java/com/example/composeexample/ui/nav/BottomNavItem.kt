@@ -10,5 +10,6 @@ sealed class BottomNavItem(
 
     object EpisodeList: BottomNavItem("Episodes", R.drawable.ic_launcher_background, "episodes")
     object CharacterList: BottomNavItem("Characters", R.drawable.ic_launcher_background, "characters")
+    object LocationList: BottomNavItem("Locations", R.drawable.ic_launcher_background, "locations")
 
 }
